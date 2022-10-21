@@ -1,5 +1,7 @@
 plugins {
     id 'java'
+    id 'io.quarkus'
+    id 'org.eclipse.jkube.openshift' version '1.9.1'
 }
 
 group 'org.example'
@@ -18,5 +20,5 @@ dependencies {
     implementation group: 'com.amazonaws', name: 'aws-java-sdk-s3', version: '1.12.322'
     implementation group: 'javax.servlet', name: 'servlet-api', version: '2.4'
     implementation group: 'com.google.guava', name: 'guava', version: '18.0'
-	implementation group: 'org.fluentd', name: 'fluent-logger', version: '0.3.4'
+    implementation group: 'org.fluentd', name: 'fluent-logger', version: '0.3.4'
 }
